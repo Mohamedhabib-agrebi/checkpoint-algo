@@ -1,0 +1,26 @@
+ALGORITHM check
+VAR
+    habib: CHAR;
+    cc,cw,cv : INTEGER:0;
+BEGIN
+    REPEAT
+        Write("donner un car");
+        Read("habib");
+        cc:= cc+1;
+        IF (habib=' ') THEN
+            cw:=cw+1;
+        END_IF
+
+        IF (habib='A' OR habib='O' OR  habib='E' OR habib='U' ORhabib='I' OR habib='Y' OR habib='a' OR habib='o' OR  habib='e' OR habib='u' ORhabib='i' OR habib='y') THEN
+        cv:= cv+1;
+        
+            
+        END_IF
+        
+    UNTIL (habib='.')
+    Write("le nobr de car est" cc);
+    Write("le nobr de word est", cw);
+    Write("le nobr de voy est",cv)
+
+    
+END
